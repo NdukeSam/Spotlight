@@ -3,6 +3,7 @@ import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/solid";
 import { motion } from "framer-motion";
 import logo from "@/assets/logo.png";
 import useMediaQuery from "../../hooks/useMediaQuery";
+import { NavLink } from "react-router-dom";
 
 // type Props = {};
 
@@ -35,7 +36,11 @@ const Navbar = () => {
       {/* Motion for navbar transition */}
       <motion.div
         initial={{ y: 0, opacity: 1 }}
-        animate={active ? { y: 0, opacity: 1, boxShadow: "0 4px 12px rgba(0, 0, 0, 0.1)" } : { y: 0, opacity: 1, boxShadow: "none" }}
+        animate={
+          active
+            ? { y: 0, opacity: 1, boxShadow: "0 4px 12px rgba(0, 0, 0, 0.1)" }
+            : { y: 0, opacity: 1, boxShadow: "none" }
+        }
         transition={{ duration: 0.3 }}
         className={`${active ? "fixed top-0 left-0 right-0 bg-white py-4" : "sticky py-6"} ${flexBetween} z-10 w-full transition-all duration-300`}
       >
@@ -43,20 +48,32 @@ const Navbar = () => {
           <div className={`${flexBetween}`}>
             {/* Logo */}
             <div>
-              <img
+              <NavLink 
+              to="/"
+              >
+                <img
                 src={logo}
                 alt="logo"
                 className="transition-all duration-300 h-9 md:h-12 lg:h-14"
               />
+              </NavLink>
             </div>
 
             {/* Right side */}
             {isAboveMediumScreens ? (
               <div>
-                <ul className={`${flexBetween} font-medium text-gray-400 gap-24 text-md`}>
-                  <li>About</li>
-                  <li>Services</li>
-                  <li>Opportunities</li>
+                <ul
+                  className={`${flexBetween} font-medium text-gray-400 gap-24 text-md`}
+                >
+                  <li>
+                    <NavLink to="/about">About</NavLink>
+                  </li>
+                  <li>
+                    <NavLink to="/services">Services</NavLink>
+                  </li>
+                  <li>
+                    <NavLink to="/opportunities">Opportunities</NavLink>
+                  </li>
                   <li>
                     <button className="bg-yellow-500 text-md text-black px-8 py-2 rounded-3xl translate-x-3 hover:bg-transparent hover:outline hover:outline-yellow-500 transition-all duration-300">
                       Login
@@ -86,9 +103,15 @@ const Navbar = () => {
           </button>
         </div>
         <ul className="flex flex-col items-center space-y-10 text-md font-medium text-gray-700">
-          <li>About</li>
-          <li>Services</li>
-          <li>Opportunities</li>
+          <li>
+            <NavLink to="/about">About</NavLink>
+          </li>
+          <li>
+            <NavLink to="/services">Services</NavLink>
+          </li>
+          <li>
+            <NavLink to="/opportunities">Opportunities</NavLink>
+          </li>
           <li>
             <button className="bg-yellow-500 text-black px-12 py-2 rounded-3xl hover:bg-transparent hover:outline hover:outline-yellow-500">
               Login
