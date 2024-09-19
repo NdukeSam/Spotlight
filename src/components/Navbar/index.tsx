@@ -4,9 +4,9 @@ import { motion } from "framer-motion";
 import logo from "@/assets/logo.png";
 import useMediaQuery from "../../hooks/useMediaQuery";
 
-type Props = {};
+// type Props = {};
 
-const Navbar = (props: Props) => {
+const Navbar = () => {
   const flexBetween = "flex items-center justify-between ";
   const isAboveMediumScreens = useMediaQuery("(min-width: 1024px)");
   const [isMenuToggled, setIsMenuToggled] = useState<boolean>(false);
