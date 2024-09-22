@@ -1,11 +1,11 @@
 
 
 type SpotlightProps = {
-  title: string;
-  details: string;
-  buttonText: string;
-  image: string;
-  reverse?: boolean; // Prop to control the layout order
+  title: string,
+  details: string,
+  buttonText: string,
+  image: string,
+  reverse?: boolean // Prop to control the layout order
 };
 
 const SpotlightSection = ({ title, details, buttonText, image, reverse = false }: SpotlightProps) => {
@@ -16,11 +16,11 @@ const SpotlightSection = ({ title, details, buttonText, image, reverse = false }
       }`}
     >
       {/* Image with hover effect */}
-      <div className="relative max-w-xs md:max-w-md overflow-hidden">
+      <div className="relative max-w-xs md:max-w-md rounded-3xl overflow-hidden">
         <img
           src={image}
           alt={title}
-          className="h-full md:h-auto w-full rounded-lg transform transition-transform duration-500 ease-in-out hover:scale-105"
+          className="h-full md:h-auto w-full transform transition-transform duration-500 ease-in-out hover:scale-105 overflow-hidden"
         />
       </div>
 

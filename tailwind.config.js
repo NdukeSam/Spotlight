@@ -8,7 +8,8 @@ module.exports = {
 
     extend: {
       fontFamily: {
-        epilogue: ["Epilogue", "sans-serif"]
+        epilogue: ["Epilogue", "sans-serif"],
+        grotesque: ["Darker Grotesque", "sans-serif"]
       },
       colors: {
         "spotlight-black": "#25292C"

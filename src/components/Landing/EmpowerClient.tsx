@@ -9,7 +9,7 @@ const EmpowerClient = () => {
     className={`mt-10 md:mt-[7rem] flex flex-col md:flex-row items-center md:items-start justify-center gap-6 md:gap-8 px-4 
     }`}
   >
-    {/* Image with hover effect */}
+    {/* Image div */}
     <div className="relative max-w-xs md:max-w-md overflow-hidden">
       <img
         src={empowerClient}

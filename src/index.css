@@ -1,4 +1,8 @@
+/*Epilogue font*/
 @import url('https://fonts.googleapis.com/css2?family=Epilogue:ital,wght@0,100..900;1,100..900&display=swap');
+/*Darker Grotesque*/
+@import url('https://fonts.googleapis.com/css2?family=Darker+Grotesque:wght@300..900&display=swap');
+
 
 @tailwind base;
 @tailwind components;
@@ -29,3 +33,17 @@
   display: inline-flex;
   animation: infinite-scroll 25s linear infinite;
 }
+
+/* .card-container {
+  perspective: 1000px;
+}
+
+.card-front, .card-back {
+  backface-visibility: hidden;
+  width: 100%;
+  height: 100%;
+}
+
+.rotate-y-180 {
+  transform: rotateY(180deg);
+} */
