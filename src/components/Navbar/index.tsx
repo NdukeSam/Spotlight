@@ -42,7 +42,7 @@ const Navbar = () => {
             : { y: 0, opacity: 1, boxShadow: "none" }
         }
         transition={{ duration: 0.3 }}
-        className={`${active ? "fixed top-0 left-0 right-0 bg-white py-4" : "sticky py-6"} ${flexBetween} z-10 w-full transition-all duration-300`}
+        className={`${active ? "fixed top-0 left-0 right-0 bg-white py-4" : "sticky py-6"} ${flexBetween} z-50 w-full transition-all duration-300`}
       >
         <div className="mx-auto w-5/6">
           <div className={`${flexBetween}`}>
@@ -66,13 +66,13 @@ const Navbar = () => {
                   className={`${flexBetween} font-medium text-gray-400 gap-24 text-md`}
                 >
                   <li>
-                    <NavLink to="/about">About</NavLink>
+                    <NavLink className={active ? "active:text-black visited:text-black" : ""} to="/about">About</NavLink>
                   </li>
                   <li>
-                    <NavLink to="/services">Services</NavLink>
+                    <NavLink className={active ? "active:text-black visited:text-black" : ""} to="/services">Services</NavLink>
                   </li>
                   <li>
-                    <NavLink to="/opportunities">Opportunities</NavLink>
+                    <NavLink className={active ? "active:text-black visited:text-black" : ""} to="/opportunities">Opportunities</NavLink>
                   </li>
                   <li>
                     <button className="bg-yellow-500 text-md text-black px-8 py-2 rounded-3xl translate-x-3 hover:bg-transparent hover:outline hover:outline-yellow-500 transition-all duration-300">

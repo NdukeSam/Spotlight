@@ -1,6 +1,5 @@
 import { useState } from "react";
 import { FiPlus, FiMinus } from "react-icons/fi"; // Plus and minus icons
-import { useNavigate } from "react-router";
 
 const faqs = [
   {
@@ -19,14 +18,18 @@ const faqs = [
       "Yes, all the services and opportunities listed on Spotlight are free for under-served communities and individuals.",
   },
   {
+    question: "How does the matching process between community residents and social impact organizations work?",
+    answer:
+      "Community residents fill out a needs assessment that helps us understand their specific needs and goals. Based on these responses, we match them with social impact organizations that offer relevant services and programs. The social impact organizations then review the anonymous profiles of the community residents and make selections based on their own preferences and criteria. Once a mutual match is made, community residents and social impact organizations can schedule a meeting to discuss next steps.",
+  },
+  {
     question: "How can I contact Spotlight for further assistance?",
     answer:
       "You can reach out to Spotlight via the contact form on our website, or email us at support@spotlight.org for further assistance.",
   },
 ];
 
-const FAQAccordion = () => {
-  const navigate = useNavigate()
+const FullFAQ = () => {
   const [openIndex, setOpenIndex] = useState<number | null>(null);
 
   const toggleFAQ = (index: number) => {
@@ -40,9 +43,9 @@ const FAQAccordion = () => {
   return (
     <section className="w-full px-4 py-10 md:py-16 lg:py-20 bg-white">
       <div className="max-w-6xl mx-auto text-center mb-8">
-        <h2 className="text-2xl md:text-3xl font-bold">Common Questions</h2>
+        <h2 className="text-2xl md:text-3xl font-bold">Frequently Asked Questions</h2>
         <p className="text-gray-600 my-12">
-          Some frequently asked questions by members of our community.
+        We have compiled a list of common questions to provide you with the information you need. If you don't find the answer you're looking for, feel free to reach out to our support team for further assistance..
         </p>
       </div>
 
@@ -68,14 +71,8 @@ const FAQAccordion = () => {
           </div>
         ))}
       </div>
-
-      <div className="mt-6 flex max-w-6xl justify-end">
-        <button onClick={()=> navigate('/faq')} className="bg-black text-white px-6 py-3 rounded-full hover:bg-gray-900">
-          More FAQs
-        </button>
-      </div>
     </section>
   );
 };
 
-export default FAQAccordion;
+export default FullFAQ;

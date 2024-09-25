@@ -1,5 +1,5 @@
+import { useNavigate } from "react-router";
 
-// import React from 'react';
 import { CiMail } from "react-icons/ci";
 import { IoCallOutline } from "react-icons/io5";
 import { CiLocationOn } from "react-icons/ci";
@@ -11,6 +11,7 @@ import footerLogo from "@/assets/footer_logo1.png"
 
 
 const Footer = () => {
+  const navigate = useNavigate()
   return (
     <footer className="bg-[#25292C]">
       <div className="max-w-7xl mx-auto pt-12 pb-8 px-4 sm:px-6 lg:pt-16 lg:px-8">
@@ -44,8 +45,8 @@ const Footer = () => {
                     Useful links
                   </h3>
                   <ul className="mt-4 space-y-4">
-                    <li><a href="#" className="text-base text-white hover:text-gray-500">About</a></li>
-                    <li><a href="#" className="text-base text-white hover:text-gray-500">Contact us</a></li>
+                    <li><a onClick={()=> navigate('/about')} className="text-base text-white hover:text-gray-500">About</a></li>
+                    <li><a onClick={()=> navigate('/spotlightsignup')} className="text-base text-white hover:text-gray-500">Contact us</a></li>
                     <li><a href="#" className="text-base text-white hover:text-gray-500">Products</a></li>
                   </ul>
                 </div>
@@ -97,7 +98,7 @@ const Footer = () => {
 
       {/* Copyright Section */}
       <div className="mt-10 hidden md:block bg-white py-8">
-        <p className="text-base text-gray-400 xl:text-center">
+        <p className="text-base text-gray-400 text-center">
           © Diversity Cyber Council, All rights reserved. 2022
         </p>
       </div>
