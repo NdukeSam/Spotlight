@@ -5,11 +5,12 @@ type Props = {
     altText: string,
     textTitle: string,
     textBody: string,
-    buttonText: string
+    buttonText: string,
+    onButtonClick: () => void;
 
 }
 
-const ImageAndText = ({ image, altText, textTitle, textBody, buttonText }: Props) => {
+const ImageAndText = ({ image, altText, textTitle, textBody, buttonText, onButtonClick }: Props) => {
   return (
     <div>
       <div className="mt-[7rem] py-10 px-4 md:px-12 lg:px-16">
@@ -37,7 +38,7 @@ const ImageAndText = ({ image, altText, textTitle, textBody, buttonText }: Props
               {textBody}
             </p>
 
-            <button className="mt-4 md:mt-[6rem] bg-black text-white px-4 py-2 md:px-5 md:py-2.5 rounded-full shadow-lg hover:bg-gray-800 hover:scale-105 transition-all duration-300 ease-in-out">
+            <button onClick={onButtonClick}  className="mt-4 md:mt-[6rem] bg-black text-white px-4 py-2 md:px-5 md:py-2.5 rounded-full shadow-lg hover:bg-gray-800 hover:scale-105 transition-all duration-300 ease-in-out">
               {buttonText}
             </button>
           </div>

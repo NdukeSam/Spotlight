@@ -46,7 +46,7 @@ const Footer = () => {
                   </h3>
                   <ul className="mt-4 space-y-4">
                     <li><a onClick={()=> navigate('/about')} className="text-base text-white hover:text-gray-500">About</a></li>
-                    <li><a onClick={()=> navigate('/spotlightsignup')} className="text-base text-white hover:text-gray-500">Contact us</a></li>
+                    <li><a onClick={()=> navigate('/contact')} className="text-base text-white hover:text-gray-500">Contact us</a></li>
                     <li><a href="#" className="text-base text-white hover:text-gray-500">Products</a></li>
                   </ul>
                 </div>

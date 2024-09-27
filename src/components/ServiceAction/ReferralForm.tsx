@@ -208,9 +208,14 @@ const ReferralForm = () => {
         </div>
 
         {/* Submit Button */}
-        <button type="submit" className="w-full py-2 bg-yellow-500 text-white rounded hover:bg-yellow-600">
-          Submit
-        </button>
+        <div className="flex justify-end">
+          <button
+              type="submit"
+              className="py-2 px-6 bg-yellow-500 text-white font-semibold rounded-full shadow hover:bg-yellow-600 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-yellow-500"
+              >
+                Submit
+           </button>
+        </div>
       </form>
     </div>
   );

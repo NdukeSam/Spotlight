@@ -8,6 +8,7 @@ import Opportunities from "./pages/Opportunities";
 import ServiceAction from "./pages/ServiceAction";
 import SpotlightSignup from "./pages/SpotlightSignup";
 import FAQ from "./pages/FAQ";
+import ContactUs from "./pages/ContactUs";
 
 
 function App() {
@@ -17,10 +18,11 @@ function App() {
       <Routes>
         <Route path="/" element={<LandingPage />} />
         <Route path="/about" element={<About />} />
+        <Route path="/contact" element={<ContactUs />} />
         <Route path="/services" element={<Services />} />
         <Route path="/opportunities" element={<Opportunities />} />
         <Route path="/serviceaction" element={<ServiceAction />} />
-        <Route path="/spotlightsignup" element={<SpotlightSignup />} />
+        <Route path="/signup" element={<SpotlightSignup />} />
         <Route path="/faq" element={<FAQ />} />
 
        

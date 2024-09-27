@@ -10,6 +10,7 @@ import EmpowerClient from "../components/Landing/EmpowerClient";
 import BridgeGap from "../components/Landing/BridgeGap";
 
 import Footer from "../components/Footer/Footer";
+import Testimonial from "../components/Landing/Testtimonial";
 
 
 
@@ -22,6 +23,7 @@ const LandingPage = () => {
       <SpotlightParent/>
       <FeatureList/>
       <EmpowerClient/>
+      <Testimonial/>
       <BridgeGap/>
       <Footer/>
       

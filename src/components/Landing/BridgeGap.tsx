@@ -1,4 +1,7 @@
+import { useNavigate } from "react-router";
+
 const BridgeGap = () => {
+  const navigate = useNavigate();
   return (
     <div className="w-full bg-gray-200 ">
       <div className="w-full bg-gray-200 px-4 mx-auto sm:max-w-xl md:max-w-2xl lg:max-w-4xl xl:max-w-6xl">
@@ -13,7 +16,7 @@ const BridgeGap = () => {
     
           {/* Button Section */}
           <div>
-            <button className="mt-4 md:mt-0 bg-black text-white px-6 py-3 rounded-3xl hover:bg-gray-800 transition-colors duration-300">
+            <button onClick={()=> navigate('/signup')} className="mt-4 md:mt-0 bg-black text-white px-6 py-3 rounded-3xl hover:bg-gray-800 transition-colors duration-300">
               Join Spotlight
             </button>
           </div>

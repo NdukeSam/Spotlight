@@ -5,13 +5,14 @@ type SpotlightProps = {
   details: string,
   buttonText: string,
   image: string,
-  reverse?: boolean // Prop to control the layout order
+  reverse?: boolean, // Prop to control the layout order
+  onButtonClick: () => void;
 };
 
-const SpotlightSection = ({ title, details, buttonText, image, reverse = false }: SpotlightProps) => {
+const SpotlightSection = ({ title, details, buttonText, image, reverse = false, onButtonClick }: SpotlightProps) => {
   return (
     <div
-      className={`mt-10 md:mt-[7rem] flex flex-col md:flex-row items-center md:items-start justify-center gap-6 md:gap-8 px-4 ${
+      className={`mt-10 md:mt-[7rem] flex flex-col md:flex-row items-center md:items-center justify-center gap-6 md:gap-8 px-4 ${
         reverse ? "md:flex-row-reverse" : ""
       }`}
     >
@@ -28,7 +29,7 @@ const SpotlightSection = ({ title, details, buttonText, image, reverse = false }
       <div className="text-left max-w-lg">
         <h3 className="text-lg md:text-xl font-bold">{title}</h3>
         <p className="mt-4 text-sm md:text-base">{details}</p>
-        <button className="mt-4 bg-black text-white px-4 py-2 rounded-3xl hover:bg-gray-800 transition-colors duration-300">
+        <button onClick={onButtonClick} className="mt-4 bg-black text-white px-4 py-2 rounded-3xl hover:bg-gray-800 transition-colors duration-300">
           {buttonText}
         </button>
       </div>

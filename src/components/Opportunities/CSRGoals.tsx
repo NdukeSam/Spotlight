@@ -1,6 +1,8 @@
 import goals from "@/assets/opportunities/goals.png"
+import { useNavigate } from "react-router";
 
 const CSRGoals = () => {
+  const navigate = useNavigate();
     return (
       <div className="py-10 px-4 md:px-12 lg:px-16">
         {/* Main Container */}
@@ -27,7 +29,7 @@ const CSRGoals = () => {
               By using Spotlight to serve members of the community, your organisation can enhance its reputation, attract and retain high-quality talent, meet stakeholder expectations, gain a competitive edge, and establish long-term sustainability.
             </p>
             <div className="flex justify-center md:justify-start">
-              <button className="bg-black text-white px-5 py-3 rounded-full shadow-lg hover:bg-gray-800 transition duration-300">
+              <button onClick={()=> navigate('/serviceaction')} className="bg-black text-white px-5 py-3 rounded-full shadow-lg hover:bg-gray-800 transition duration-300">
                 Get Involved
               </button>
             </div>
