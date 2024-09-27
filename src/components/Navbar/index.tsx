@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/solid";
+import { ChevronDownIcon } from "@heroicons/react/24/outline"; // Chevron down icon
 import { motion } from "framer-motion";
 import logo from "@/assets/logo.png";
 import useMediaQuery from "../../hooks/useMediaQuery";
@@ -8,7 +9,7 @@ import { NavLink } from "react-router-dom";
 // type Props = {};
 
 const Navbar = () => {
-  const flexBetween = "flex items-center justify-between ";
+  const flexBetween = "flex items-center justify-between";
   const isAboveMediumScreens = useMediaQuery("(min-width: 1024px)");
   const [isMenuToggled, setIsMenuToggled] = useState<boolean>(false);
   const [active, setActive] = useState<boolean>(false);
@@ -42,20 +43,20 @@ const Navbar = () => {
             : { y: 0, opacity: 1, boxShadow: "none" }
         }
         transition={{ duration: 0.3 }}
-        className={`${active ? "fixed top-0 left-0 right-0 bg-white py-4" : "sticky py-6"} ${flexBetween} z-50 w-full transition-all duration-300`}
+        className={`${
+          active ? "fixed top-0 left-0 right-0 bg-white py-4" : "sticky py-6"
+        } ${flexBetween} z-50 w-full transition-all duration-300`}
       >
         <div className="mx-auto w-5/6">
           <div className={`${flexBetween}`}>
             {/* Logo */}
             <div>
-              <NavLink 
-              to="/"
-              >
+              <NavLink to="/">
                 <img
-                src={logo}
-                alt="logo"
-                className="transition-all duration-300 h-9 md:h-12 lg:h-14"
-              />
+                  src={logo}
+                  alt="logo"
+                  className="transition-all duration-300 h-9 md:h-12 lg:h-14"
+                />
               </NavLink>
             </div>
 
@@ -63,17 +64,97 @@ const Navbar = () => {
             {isAboveMediumScreens ? (
               <div>
                 <ul
-                  className={`${flexBetween} font-medium text-gray-400 gap-24 text-md`}
+                  className={`${flexBetween} font-medium text-gray-400 gap-24 text-md relative`}
                 >
-                  <li>
-                    <NavLink className={active ? "active:text-black visited:text-black" : ""} to="/about">About</NavLink>
+                  {/* About NavLink with Dropdown */}
+                  <li className="relative group">
+                    <button
+                      id="dropdownHoverButton"
+                      className="text-gray-700 hover:text-black inline-flex items-center"
+                    >
+                      About
+                      <ChevronDownIcon className="w-4 h-4 ml-1" />
+                    </button>
+                    <div
+                      id="dropdownHover"
+                      className="absolute z-10 hidden bg-white divide-y divide-gray-100 rounded-lg shadow w-44 group-hover:block"
+                    >
+                      <ul className="py-2 text-sm text-gray-700">
+                        <li>
+                          <NavLink
+                            to="/about"
+                            className="block px-4 py-2 hover:bg-gray-100"
+                          >
+                            About Us
+                          </NavLink>
+                        </li>
+                        <li>
+                          <NavLink
+                            to="/about/team"
+                            className="block px-4 py-2 hover:bg-gray-100"
+                          >
+                            Team
+                          </NavLink>
+                        </li>
+                      </ul>
+                    </div>
                   </li>
-                  <li>
-                    <NavLink className={active ? "active:text-black visited:text-black" : ""} to="/services">Services</NavLink>
+
+                  {/* Services NavLink with Dropdown */}
+                  <li className="relative group">
+                    <button
+                      id="dropdownHoverButton"
+                      className="text-gray-700 hover:text-black inline-flex items-center"
+                    >
+                      Services
+                      <ChevronDownIcon className="w-4 h-4 ml-1" />
+                    </button>
+                    <div
+                      id="dropdownHover"
+                      className="absolute z-10 hidden bg-white divide-y divide-gray-100 rounded-lg shadow w-44 group-hover:block"
+                    >
+                      <ul className="py-2 text-sm text-gray-700">
+                      <li>
+                          <NavLink
+                            to="/ImpactService"
+                            className="block px-4 py-2 hover:bg-gray-100"
+                          >
+                            Impact Service
+                          </NavLink>
+                        </li>
+                        <li>
+                          <NavLink
+                            to="/CommunityService"
+                            className="block px-4 py-2 hover:bg-gray-100"
+                          >
+                            Community Service
+                          </NavLink>
+                        </li>
+                        <li>
+                          <NavLink
+                            to="/ServiceAction"
+                            className="block px-4 py-2 hover:bg-gray-100"
+                          >
+                            Service Action
+                          </NavLink>
+                        </li>
+                      </ul>
+                    </div>
                   </li>
+
+                  {/* Opportunities */}
                   <li>
-                    <NavLink className={active ? "active:text-black visited:text-black" : ""} to="/opportunities">Opportunities</NavLink>
+                    <NavLink
+                      to="/opportunities"
+                      className={({ isActive }) =>
+                        isActive ? "text-black" : "text-gray-700"
+                      }
+                    >
+                      Opportunities
+                    </NavLink>
                   </li>
+
+                  {/* Login Button */}
                   <li>
                     <button className="bg-yellow-500 text-md text-black px-8 py-2 rounded-3xl translate-x-3 hover:bg-transparent hover:outline hover:outline-yellow-500 transition-all duration-300">
                       Login
@@ -95,7 +176,7 @@ const Navbar = () => {
         initial={{ x: "100%" }}
         animate={isMenuToggled ? { x: 0 } : { x: "100%" }}
         transition={{ duration: 0.5, ease: "easeInOut" }}
-        className="fixed right-0 top-0 h-full bg-white shadow-lg w-[300px] z-20 transform"
+        className="fixed right-0 top-0 h-full bg-white shadow-lg w-[300px] z-[100] transform"
       >
         <div className="p-10 flex justify-end">
           <button onClick={() => setIsMenuToggled(false)}>

@@ -6,22 +6,22 @@ const faqs = [
   {
     question: "How does Spotlight work?",
     answer:
-      "Spotlight connects community members to social good organizations providing resources and services. Users can find, explore, and engage with local opportunities.",
+      "Spotlight is a web application that connects members of underserved communities in Atlanta with opportunities and services offered by non-profit organizations. Users can browse through various services and opportunities, apply through the app, and benefit from the offerings provided by our partnering non-profits. We welcome users seeking assistance in areas such as education, job training, healthcare, social services, and more.",
   },
   {
     question: "Is Spotlight available only in Atlanta?",
     answer:
-      "Currently, Spotlight focuses on Atlanta, but we are working on expanding to other regions in the future.",
+      "Currently, Spotlight focuses on serving underserved communities in Atlanta. However, we have plans to expand our services to other locations in the future, allowing more individuals and organizations to benefit from the platform.",
   },
   {
     question: "Are the services and opportunities on Spotlight free?",
     answer:
-      "Yes, all the services and opportunities listed on Spotlight are free for under-served communities and individuals.",
+      "Spotlight is free for community residents or social impact organizations. Our goal is to make our services and resources accessible to all, regardless of their financial situation. Formation about each service or opportunity, allowing you to make informed decisions.",
   },
   {
     question: "How can I contact Spotlight for further assistance?",
     answer:
-      "You can reach out to Spotlight via the contact form on our website, or email us at support@spotlight.org for further assistance.",
+      "If you have any questions, concerns, or need assistance, you can reach out to our support team through the contact information provided on the website. We are here to help and ensure you have a positive experience using the Spotlight app.",
   },
 ];
 

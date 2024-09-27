@@ -10,32 +10,32 @@ const features = [
   {
     title: "KPI & Data Management",
     icon: feat1,
-    description: "Manage and track KPIs effectively."
+    description: "Capture important data points related to service-based offerings measuring your organization’s community impact."
   },
   {
     title: "Case Management",
     icon: feat2,
-    description: "Easily manage and monitor case progress."
+    description: "Leverage a structured case management tool for tracking services offered to program participants."
   },
   {
     title: "Community Networking",
     icon: feat3,
-    description: "Build and grow your community connections."
+    description: "Engage with other social good organizations to increase impact through collaboration"
   },
   {
     title: "Program Visibility",
     icon: feat4,
-    description: "Enhance the visibility of your programs."
+    description: "Market directly to a targeted audience within the community"
   },
   {
     title: "Service Reimbursement",
     icon: feat5,
-    description: "Ensure accurate service reimbursements."
+    description: "Get rewarded for every successful service rendered through Spotlight as a Social good organization"
   },
   {
     title: "Equity and Diversity",
     icon: feat6,
-    description: "Promote equity and diversity in your programs."
+    description: "Promote equity and diversity through delivery of services that support & equip underserved communities"
   },
 ];
 
@@ -57,7 +57,7 @@ const FeatureCard = ({ feature }: { feature: any }) => {
         }`}
       >
         <img src={feature.icon} alt={feature.title} className="h-12 w-12 mb-2" />
-        <p className="text-sm">{feature.title}</p>
+        <p className="text-sm p-2">{feature.title}</p>
       </div>
 
       {/* Back Side - Flip to Show Description */}
@@ -66,7 +66,7 @@ const FeatureCard = ({ feature }: { feature: any }) => {
           flipped ? "opacity-100" : "opacity-0"
         } bg-yellow-500 rounded-lg transition-all p-4`}
       >
-        <p className="text-xs">{feature.description}</p>
+        <p className="text-sm">{feature.description}</p>
       </div>
     </div>
   );

@@ -9,6 +9,8 @@ import ServiceAction from "./pages/ServiceAction";
 import SpotlightSignup from "./pages/SpotlightSignup";
 import FAQ from "./pages/FAQ";
 import ContactUs from "./pages/ContactUs";
+import CommunityServices from "./pages/CommunityServices";
+import ImpactServices from "./pages/ImpactServices";
 
 
 function App() {
@@ -24,6 +26,8 @@ function App() {
         <Route path="/serviceaction" element={<ServiceAction />} />
         <Route path="/signup" element={<SpotlightSignup />} />
         <Route path="/faq" element={<FAQ />} />
+        <Route path="/CommunityService" element={<CommunityServices />} />
+        <Route path="/ImpactService" element={<ImpactServices />} />
 
        
       </Routes>
