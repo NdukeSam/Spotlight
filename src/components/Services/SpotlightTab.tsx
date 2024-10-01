@@ -24,7 +24,7 @@ const impactContent = [
     title: "Support and Empower",
     description:
       "Together, we empower social impact organizations by equipping them with vital tools and resources to amplify their mission. With our comprehensive solutions, you can confidently drive positive change and shape a better future for all.",
-    image: communityTabImage,
+    image: socialTabImage,
   },
   {
     title: "Provide For Those In Need",

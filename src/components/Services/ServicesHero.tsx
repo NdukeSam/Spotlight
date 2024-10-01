@@ -21,19 +21,33 @@ interface Props {
 const ServicesHero = ({ image, textTitle, textBody, altText }: Props) => {
   return (
     <div>
-      <div className="my-5 md:mt-[7rem] flex flex-col-reverse md:flex-row items-center md:items-start justify-center gap-6 md:gap-[7rem] py-4 px-4">
+      <div className="py-10 px-4 md:px-12 mb-[5rem] lg:px-16">
+        {/* Main Container */}
+        <div className="flex flex-col-reverse md:flex-row items-center gap-8 md:gap-12">
 
+          {/* Text Section */}
+          <div className="md:w-1/2 items-start">
+            <h2 className="hidden md:block text-center md:text-left text-2xl md:text-3xl font-bold mb-4">
+            {textTitle}
+            </h2>
+            <p className="text-gray-800 text-lg leading-relaxed mb-4">
+            {textBody}
+            </p>
 
-        {/* Text container with max-width for better control on larger screens */}
-        <div className=" max-w-lg md:self-center">
-          <h3 className="text-lg md:text-3xl font-bold hidden md:block">{textTitle}</h3>
-          <p className="mt-4 text-sm md:text-base text-gray-500">{textBody}</p>
-        </div>
+          </div>
 
-        {/* Image div */}
-          <div className="flex flex-col-reverse md:flex-row max-w-3xl md:max-w-md overflow-hidden">
-          <img src={image} alt={altText} className="h-full md:h-auto w-full" />
-          <h3 className="text-lg md:text-3xl font-bold py-5 block md:hidden">{textTitle}</h3>
+            {/* Image Section */}
+          <div className="md:w-1/2">
+            <h2 className=" block md:hidden text-center md:text-left text-2xl md:text-3xl font-bold mb-4">
+              Meet Your Corporate Social Responsibility Goals
+            </h2>
+            <img
+              src={image}
+              alt={altText}
+              className="rounded-md object-cover w-full"
+            />
+          </div>
+
         </div>
       </div>
     </div>
@@ -46,3 +60,4 @@ const ServicesHeroParent = () => {
 };
 
 export default ServicesHeroParent;
+
