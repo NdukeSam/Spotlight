@@ -90,10 +90,10 @@ const Navbar = () => {
                         </li>
                         <li>
                           <NavLink
-                            to="/about/team"
+                            to="/contact"
                             className="block px-4 py-2 hover:bg-gray-100"
                           >
-                            Team
+                            Contact Us
                           </NavLink>
                         </li>
                       </ul>

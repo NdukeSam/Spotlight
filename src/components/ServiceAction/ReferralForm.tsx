@@ -48,7 +48,7 @@ const ReferralForm = () => {
   };
 
   return (
-    <div className="max-w-xl mx-auto p-4 md:p-8 my-5 md:my-[7rem] bg-gray-100 rounded-lg shadow-md">
+    <div id="referral-form" className="max-w-xl mx-auto p-4 md:p-8 my-5 md:my-[7rem] bg-gray-100 rounded-lg shadow-md">
       {/* Form Type Selection */}
       <h2 className="text-xl font-bold text-center mb-4">Refer a candidate to Spotlight</h2>
       <div className="flex justify-center mb-6">
