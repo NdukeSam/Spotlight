@@ -7,7 +7,6 @@ import OpportunitiesForClients from "../components/ServiceAction/Unlock";
 import BridgeGap from "../components/Landing/BridgeGap";
 import Footer from "../components/Footer/Footer";
 import Strengthen from "../components/ServiceAction/Strengthen";
-import PresidentQuote from "../components/ServiceAction/PresidentQuote";
 
 
 // type Props = {}
@@ -19,7 +18,6 @@ const ServiceAction = () => {
         <AmplifyImpact/>
         <Strengthen/>
         <OpportunitiesForClients/>
-        <PresidentQuote/>
         <ReferralForm/>
         <BridgeGap/>
         <Footer/>

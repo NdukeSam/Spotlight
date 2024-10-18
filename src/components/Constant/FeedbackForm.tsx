@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import emailIcon from "@/assets/email.png";
-import phoneIcon from "@/assets/phone.png";
+// import phoneIcon from "@/assets/phone.png";
 import { z } from "zod";
 
 // Define a Zod schema for form validation
@@ -84,8 +84,7 @@ const FeedbackForm = () => {
         <div className="flex-1 mb-8 lg:mb-0">
           <h2 className="text-2xl font-bold mb-4">Got a Question or Feedback?</h2>
           <p className="mb-4 text-gray-700">
-            Spotlight connects individuals to nonprofits, making opportunities accessible. Form partnerships, 
-            network, access exclusive content, and achieve great things together.
+            Spotlight connects community members to nonprofits, community organization, as well state and federal agencies to streamline connecting to social impact services more accessible. As a Spotlight client we enable the establishment of partnerships, networking, access to exclusive content, and achieving great things together as a community.
           </p>
           <p className="mb-8 text-gray-700">
             Got a question or concern? Want to give us some feedback? Don't hold back, we want to hear it all!
@@ -97,16 +96,17 @@ const FeedbackForm = () => {
             <div className="p-2 rounded-full">
               <img src={emailIcon} alt="email" />
             </div>
-            <span className="text-gray-700">support@spotlightapp.org</span>
+            <span className="text-gray-700">support@myspotlight.org</span>
           </div>
 
-          <div className="flex items-center space-x-4">
+          {/* <div className="flex items-center space-x-4">
             <div className="p-2 rounded-full">
               <img src={phoneIcon} alt="phone" />
             </div>
             <span className="text-gray-700">+1348059843257</span>
           </div>
-        </div>
+          */}
+        </div> 
 
         {/* Right Side: Form Section */}
         <div className="flex-1 bg-gray-50 p-6 rounded-lg shadow-md">

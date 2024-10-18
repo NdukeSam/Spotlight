@@ -142,15 +142,15 @@ const Navbar = () => {
                     </div>
                   </li>
 
-                  {/* Opportunities */}
+                  {/* Call To Action */}
                   <li>
                     <NavLink
-                      to="/opportunities"
+                      to="/cta"
                       className={({ isActive }) =>
                         isActive ? "text-black" : "text-gray-700"
                       }
                     >
-                      Opportunities
+                      Call To Action
                     </NavLink>
                   </li>
 
@@ -191,7 +191,7 @@ const Navbar = () => {
             <NavLink to="/services">Services</NavLink>
           </li>
           <li>
-            <NavLink to="/opportunities">Opportunities</NavLink>
+            <NavLink to="/cta">Call To Action</NavLink>
           </li>
           <li>
             <button className="bg-yellow-500 text-black px-12 py-2 rounded-3xl hover:bg-transparent hover:outline hover:outline-yellow-500">

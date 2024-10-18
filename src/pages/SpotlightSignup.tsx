@@ -34,7 +34,7 @@ const SpotlightSignup = () => {
           Coming Soon!
         </h3>
         <h3 className="text-2xl text-center font-bold px-7 text-gray-600">
-          Our community Mobile App is coming soon, be the first to get notified and get benefits.
+        Spotlight is launching soon on Android & iOS, be the first to get notified and gain access to exclusive benefits.
         </h3>
       </div>
       <div className="items-center w-full md:w-1/2 mt-10 md:mt-0 lg:px-10">

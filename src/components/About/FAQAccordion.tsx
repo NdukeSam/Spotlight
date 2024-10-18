@@ -6,13 +6,13 @@ const faqs = [
   {
     question: "How does Spotlight work?",
     answer:
-      "Spotlight is a web application that connects members of underserved communities in Atlanta with opportunities and services offered by non-profit organizations. Users can browse through various services and opportunities, apply through the app, and benefit from the offerings provided by our partnering non-profits. We welcome users seeking assistance in areas such as education, job training, healthcare, social services, and more.",
+      "Spotlight is a web application that connects members of underserved communities with opportunities and services offered by non-profit organizations. Users can browse through various services and opportunities, apply through the app, and benefit from the offerings provided by our partnering non-profits. We welcome users seeking assistance in areas such as education, job training, healthcare, social services, and more.",
   },
-  {
-    question: "Is Spotlight available only in Atlanta?",
-    answer:
-      "Currently, Spotlight focuses on serving underserved communities in Atlanta. However, we have plans to expand our services to other locations in the future, allowing more individuals and organizations to benefit from the platform.",
-  },
+  // {
+  //   question: "Is Spotlight available only in Atlanta?",
+  //   answer:
+  //     "Currently, Spotlight focuses on serving underserved communities in Atlanta. However, we have plans to expand our services to other locations in the future, allowing more individuals and organizations to benefit from the platform.",
+  // },
   {
     question: "Are the services and opportunities on Spotlight free?",
     answer:

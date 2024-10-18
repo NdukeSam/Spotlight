@@ -1,8 +1,8 @@
 import { useNavigate } from "react-router";
 
 import { CiMail } from "react-icons/ci";
-import { IoCallOutline } from "react-icons/io5";
-import { CiLocationOn } from "react-icons/ci";
+// import { IoCallOutline } from "react-icons/io5";
+// import { CiLocationOn } from "react-icons/ci";
 import { FaFacebookF, FaTwitter, FaInstagram  } from "react-icons/fa";
 import { RiYoutubeLine } from "react-icons/ri";
 import { CiLinkedin } from "react-icons/ci";
@@ -61,16 +61,16 @@ const Footer = () => {
               <ul className="mt-4 space-y-4">
                 <li className="flex items-center text-base text-white hover:text-gray-300">
                   <CiMail className="flex-shrink-0 mr-3 h-6 w-6 text-gray-400" />
-                  <span>support@spotlightapp.org</span>
+                  <span>support@myspotlight.org</span>
                 </li>
-                <li className="flex items-center text-base text-white hover:text-gray-300">
+                {/* <li className="flex items-center text-base text-white hover:text-gray-300">
                   <IoCallOutline className="flex-shrink-0 mr-3 h-6 w-6 text-gray-400" />
                   <span>+1 348059843257</span>
                 </li>
                 <li className="flex items-center text-base text-white hover:text-gray-300">
                   <CiLocationOn className="flex-shrink-0 mr-3 h-6 w-6 text-gray-400" />
                   <span>Atlanta, Georgia</span>
-                </li>
+                </li> */}
               </ul>
             </div>
           </div>
@@ -99,7 +99,7 @@ const Footer = () => {
       {/* Copyright Section */}
       <div className="mt-10 hidden md:block bg-white py-8">
         <p className="text-base text-gray-400 text-center">
-          © Diversity Cyber Council, All rights reserved. 2022
+        Spotlight, LLC All Rights Reserved
         </p>
       </div>
     </footer>

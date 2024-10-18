@@ -5,13 +5,13 @@ const faqs = [
   {
     question: "How does Spotlight work?",
     answer:
-      "Spotlight is a web application that connects members of underserved communities in Atlanta with opportunities and services offered by non-profit organizations. Users can browse through various services and opportunities, apply through the app, and benefit from the offerings provided by our partnering non-profits. We welcome users seeking assistance in areas such as education, job training, healthcare, social services, and more.",
+      "Spotlight is a web application that connects members of underserved communities with opportunities and services offered by non-profit organizations. Users can browse through various services and opportunities, apply through the app, and benefit from the offerings provided by our partnering non-profits. We welcome users seeking assistance in areas such as education, job training, healthcare, social services, and more.",
   },
-  {
-    question: "Is Spotlight available only in Atlanta?",
-    answer:
-      "Currently, Spotlight focuses on serving underserved communities in Atlanta. However, we have plans to expand our services to other locations in the future, allowing more individuals and organizations to benefit from the platform.",
-  },
+  // {
+  //   question: "Is Spotlight available only in Atlanta?",
+  //   answer:
+  //     "Currently, Spotlight focuses on serving underserved communities in Atlanta. However, we have plans to expand our services to other locations in the future, allowing more individuals and organizations to benefit from the platform.",
+  // },
   {
     question: "Are the services and opportunities on Spotlight free?",
     answer:
@@ -21,11 +21,6 @@ const faqs = [
     question: "How does the matching process between community residents and social impact organizations work?",
     answer:
       "Community residents fill out a needs assessment that helps us understand their specific needs and goals. Based on these responses, we match them with social impact organizations that offer relevant services and programs. The social impact organizations then review the anonymous profiles of the community residents and make selections based on their own preferences and criteria. Once a mutual match is made, community residents and social impact organizations can schedule a meeting to discuss next steps.",
-  },
-  {
-    question: "How can I contact Spotlight for further assistance?",
-    answer:
-      "If you have any questions, concerns, or need assistance, you can reach out to our support team through the contact information provided on the website. We are here to help and ensure you have a positive experience using the Spotlight app.",
   },
   {
     question: "How can I contact Spotlight for further assistance?",

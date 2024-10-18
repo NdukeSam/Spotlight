@@ -1,4 +1,4 @@
-import hero from "@/assets/about/kellyVid.mp4"
+import hero from "@/assets/about/helpVid.mp4"
 
 
 // import React from 'react'

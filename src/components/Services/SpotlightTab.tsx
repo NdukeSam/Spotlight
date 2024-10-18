@@ -113,7 +113,7 @@ const SpotlightTab = () => {
     ? "Make an Impact with Spotlight!"
     : "We've Got You Covered";
   const paragraphText = isSocialTab
-    ? "Our platform opens doors to essential services and programs, empowering you to confidently stride towards a brighter future."
+    ? "Our platform opens doors to essential services and programs, empowering you to confidently strive towards a brighter future."
     : "As a community member, we provide everything you need to engage, grow, and impact your surroundings.";
 
   return (

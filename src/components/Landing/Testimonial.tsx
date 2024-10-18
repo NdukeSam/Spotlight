@@ -8,7 +8,7 @@ import ellipse4 from "@/assets/circle/Ellipse_4.png"
 const testimonials = [
   {
     text: "“I joined Spotlight in search of legal services. I’m impressed with the support I received from XYZ NPO and how they ensured my issue was resolved.”",
-    name: "John Doe",
+    name: "Jack Lowry",
     location: "Chicago, USA",
     image: ellipse1, // Replace with actual image URL
   },
@@ -21,13 +21,13 @@ const testimonials = [
   {
     text: "Thanks to Spotlight, I could volunteer with local non-profits that I didn't know existed before. I'm excited to continue my journey with them.",
     name: "Mary Johnson",
-    location: "Chicago, USA",
+    location: "New York, USA",
     image: ellipse3,
   },
   {
     text: "Thanks to Spotlight, I could volunteer with local non-profits that I didn't know existed before. I'm excited to continue my journey with them.",
-    name: "Jane Jackson",
-    location: "Chicago, USA",
+    name: "Carl Henz",
+    location: "Delaware, USA",
     image: ellipse4,
   },
   {
@@ -39,7 +39,7 @@ const testimonials = [
   {
     text: "Thanks to Spotlight, I could volunteer with local non-profits that I didn't know existed before. I'm excited to continue my journey with them.",
     name: "Mary Johnson",
-    location: "Chicago, USA",
+    location: "Illinois, USA",
     image: ellipse2,
   },
   // Add more testimonials as needed

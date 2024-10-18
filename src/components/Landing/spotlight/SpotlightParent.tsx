@@ -9,7 +9,7 @@ const SpotlightParentSection = () => {
   // Example data for two spotlight sections
   const spotlightData = [
     {
-      title: "Social Impact Organisations and Nonprofits",
+      title: "Social Impact Organizations and Nonprofits",
       details:
         "Be a part of the solution, enhance program visibility and service offering participation by engaging directly with your targeted audience.",
       buttonText: "Support Our Cause",

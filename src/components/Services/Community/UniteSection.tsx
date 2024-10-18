@@ -10,8 +10,8 @@ const UniteSection = () => {
         <ImageAndText
         image={volunteers}
         altText="child and elder image"
-        textTitle="Unite, Empower, Impact with Spotlight"
-        textBody="Spotlight connects Atlanta's underrepresented communities to essential services and programs, fostering community ties and creating opportunities for growth and development. Empower your community with Spotlight."
+        textTitle="Unite, Empower, And Solidify Impact with Spotlight"
+        textBody="Spotlight connects community members to essential services and programs, fostering community ties and creating opportunities for personal growth and professional development. Empower your community with Spotlight."
         buttonText="Get Involved"
         onButtonClick={()=> navigate('/serviceaction')}
         />

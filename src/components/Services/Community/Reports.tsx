@@ -8,7 +8,7 @@ import reportsImage from "@/assets/services/reports.png"
 const Reports = () => {
   return (
     <div>
-        <div className="bg-[#FBD100] text-[#3A4145] mt-[7rem] py-10 px-4 md:px-12 lg:px-16">
+        <div className="bg-[#FBD100] text-[#3A4145] mt-[7rem] mb-[12rem] py-10 px-4 md:px-12 lg:px-16">
       {/* Main Container */}
       <div className="flex flex-col-reverse md:flex-row items-center gap-8">
         {/* Text Section */}

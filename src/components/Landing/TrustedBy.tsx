@@ -8,7 +8,7 @@ import savethechildren from "@/assets/landing/trusted/savethechildren.png"
 const TrustedBySection = () => {
     return (
       <section className="py-10 mt-16 bg-white text-center">
-        <h2 className="text-2xl font-bold">Trusted By</h2>
+        <h2 className="text-2xl font-bold">Ideal Clients</h2>
   
         {/* Infinite scrolling carousel for mobile */}
         <div className="md:hidden overflow-hidden mt-16 relative">
