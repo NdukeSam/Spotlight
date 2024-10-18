@@ -28,7 +28,7 @@ const SpotlightSection = ({ title, details, buttonText, image, reverse = false, 
       {/* Text container with max-width for better control on larger screens */}
       <div className="text-left max-w-lg">
         <h3 className="text-lg md:text-xl font-bold">{title}</h3>
-        <p className="mt-4 text-sm md:text-base">{details}</p>
+        <p className="my-4 text-sm md:text-base">{details}</p>
         <button onClick={onButtonClick} className="mt-4 bg-black text-white px-4 py-2 rounded-3xl hover:bg-gray-800 transition-colors duration-300">
           {buttonText}
         </button>

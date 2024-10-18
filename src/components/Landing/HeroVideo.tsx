@@ -1,6 +1,6 @@
 // import React, { useState } from 'react';
 // import heroVid from "@/assets/landing/heroVid.mp4";
-import sub from "@/assets/landing/sub.mp4";
+import help from "@/assets/landing/squared.mp4";
 
 const HeroVideoSection = () => {
 
@@ -8,7 +8,7 @@ const HeroVideoSection = () => {
     <div className="md:mt-0 h-full sm:w-full aspect-square">
 
         <video className="w-full aspect-square object-fill" loop autoPlay muted>
-          <source src={sub} type="video/mp4" />
+          <source src={help} type="video/mp4" />
           Your browser does not support the video tag.
         </video>
       

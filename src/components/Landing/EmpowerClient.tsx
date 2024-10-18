@@ -13,11 +13,11 @@ const EmpowerClient = () => {
     }`}
   >
     {/* Image div */}
-    <div className="relative max-w-xs md:max-w-md overflow-hidden">
+    <div className="relative max-w-xs md:max-w-md overflow-hidden rounded-lg">
       <img
         src={empowerClient}
         alt="Doctor field"
-        className="h-full md:h-auto w-full rounded-lg transform transition-transform duration-500 ease-in-out hover:scale-105"
+        className="h-full md:h-auto w-full  transform transition-transform duration-500 ease-in-out hover:scale-105"
       />
     </div>
 
