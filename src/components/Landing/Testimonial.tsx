@@ -14,7 +14,7 @@ const testimonials = [
   },
   {
     text: "Spotlight helped me find new opportunities to get involved in my community. The platform is user-friendly, and I love the network I've built.",
-    name: "Jane Smith",
+    name: "Emy Smith",
     location: "Los Angeles, USA",
     image: ellipse2,
   },

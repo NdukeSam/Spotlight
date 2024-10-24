@@ -156,9 +156,11 @@ const Navbar = () => {
 
                   {/* Login Button */}
                   <li>
+                    <NavLink to="/signup">
                     <button className="bg-yellow-500 text-md text-black px-8 py-2 rounded-3xl translate-x-3 hover:bg-transparent hover:outline hover:outline-yellow-500 transition-all duration-300">
                       Login
                     </button>
+                    </NavLink>
                   </li>
                 </ul>
               </div>
@@ -194,9 +196,11 @@ const Navbar = () => {
             <NavLink to="/cta">Call To Action</NavLink>
           </li>
           <li>
+            <NavLink to="/signup">
             <button className="bg-yellow-500 text-black px-12 py-2 rounded-3xl hover:bg-transparent hover:outline hover:outline-yellow-500">
               Login
             </button>
+            </NavLink>
           </li>
         </ul>
       </motion.div>

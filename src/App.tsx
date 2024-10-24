@@ -11,6 +11,7 @@ import FAQ from "./pages/FAQ";
 import ContactUs from "./pages/ContactUs";
 import CommunityServices from "./pages/CommunityServices";
 import ImpactServices from "./pages/ImpactServices";
+import PrivacyPolicy from "./components/Constant/PrivacyPolicy";
 
 
 function App() {
@@ -28,6 +29,7 @@ function App() {
         <Route path="/faq" element={<FAQ />} />
         <Route path="/CommunityService" element={<CommunityServices />} />
         <Route path="/ImpactService" element={<ImpactServices />} />
+        <Route path="/privacy" element={<PrivacyPolicy />} />
 
        
       </Routes>
