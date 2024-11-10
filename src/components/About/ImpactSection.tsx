@@ -26,7 +26,7 @@ const figures = [
                 className="flex flex-col items-center justify-center p-4 rounded-lg"
               >
                 <h4 className="text-4xl font-black font-grotesque ">{figure.figureTitle}</h4>
-                <p className="mt-2  text-lg  text-gray-700">{figure.figureBody}</p>
+                <p className="mt-2 text-lg text-gray-700">{figure.figureBody}</p>
               </div>
             ))}
           </div>

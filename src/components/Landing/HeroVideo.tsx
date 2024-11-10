@@ -1,6 +1,6 @@
 // import React, { useState } from 'react';
 // import heroVid from "@/assets/landing/heroVid.mp4";
-import help from "@/assets/landing/squared.mp4";
+import help from "@/assets/landing/spotlightVid.mp4";
 
 const HeroVideoSection = () => {
 

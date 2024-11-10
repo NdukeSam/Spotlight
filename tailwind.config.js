@@ -12,7 +12,8 @@ module.exports = {
         grotesque: ["Darker Grotesque", "sans-serif"]
       },
       colors: {
-        "spotlight-black": "#25292C"
+        "spotlight-black": "#25292C",
+        "spotlight-yellow": "#FFFFCC"
       },
       // screens: {
       //   xs: "480px",

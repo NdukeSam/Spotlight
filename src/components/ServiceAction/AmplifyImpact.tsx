@@ -27,7 +27,7 @@ const AmplifyImpact = () => {
         </h2>
         <button 
           onClick={scrollToReferralForm} 
-          className="mt-4 bg-yellow-400 text-black px-6 py-3 rounded-full hover:bg-yellow-500 transition duration-300">
+          className="mt-4 bg-spotlight-yellow text-black px-6 py-3 rounded-full hover:bg-spotlight-yellow transition duration-300">
           Get Started
         </button>
       </div>

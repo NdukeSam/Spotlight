@@ -154,10 +154,18 @@ const Navbar = () => {
                     </NavLink>
                   </li>
 
+                  <li>
+                    <NavLink to="/signup">
+                    <button className="bg-transparent text-md text-black px-8 py-2 rounded-3xl translate-x-3 hover:bg-transparent hover:outline hover:outline-spotlight-yellow transition-all duration-300">
+                      Request Demo
+                    </button>
+                    </NavLink>
+                  </li>
+
                   {/* Login Button */}
                   <li>
                     <NavLink to="/signup">
-                    <button className="bg-yellow-500 text-md text-black px-8 py-2 rounded-3xl translate-x-3 hover:bg-transparent hover:outline hover:outline-yellow-500 transition-all duration-300">
+                    <button className="bg-spotlight-yellow text-md text-black px-8 py-2 rounded-3xl translate-x-3 hover:bg-transparent hover:outline hover:outline-spotlight-yellow transition-all duration-300">
                       Login
                     </button>
                     </NavLink>
@@ -197,7 +205,7 @@ const Navbar = () => {
           </li>
           <li>
             <NavLink to="/signup">
-            <button className="bg-yellow-500 text-black px-12 py-2 rounded-3xl hover:bg-transparent hover:outline hover:outline-yellow-500">
+            <button className="bg-spotlight-yellow text-black px-12 py-2 rounded-3xl hover:bg-transparent hover:outline hover:outline-spotlight-yellow">
               Login
             </button>
             </NavLink>

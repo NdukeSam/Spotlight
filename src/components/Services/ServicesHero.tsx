@@ -1,4 +1,4 @@
-import people from "@/assets/services/services.png";
+import people from "@/assets/services/serviceHero.jpg";
 
 // Define the servicesData object
 const servicesData = {

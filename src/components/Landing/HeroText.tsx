@@ -10,7 +10,7 @@ const HeroTextSection = () => {
         Gain access to no-cost to low-cost services offered by Social Impact Organization in your community
       </h1>
       <div className="my-4 flex flex-col md:flex-row justify-center md:justify-start gap-12">
-        <button onClick={()=> navigate('/signup')} className="bg-yellow-500 text-black px-8 py-3 rounded-3xl">
+        <button onClick={()=> navigate('/signup')} className="bg-spotlight-yellow text-black px-8 py-3 rounded-3xl">
           Start Your Journey
         </button>
         <button
